@@ -9,8 +9,8 @@ void test(T array, size_t size) {
     std::cout << "enter a left index\n";
     int left = cin_in_range<int>(0, size);
     std::cout << "enter a right index\n";
-    int right = cin_in_range<int>(left, size);
-    int sum = calc_sum(array, left, right, size);
+    int right = cin_in_range<int>(left, size - 1);
+    int sum = calc_sum(array, left, right, size - 1);
     std::cout << sum << '\n';
 }
 
